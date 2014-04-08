@@ -1,0 +1,16 @@
+{
+    "name": "vundicind/yii-pickadate",
+    "description": "Pickadate Widget for Yii",
+    "keywords": ["yii", "pickadate"],
+    "type": "yii-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Radu Dumbrăveanu",
+            "email": "vundicind@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii": "*"
+    }
+}
