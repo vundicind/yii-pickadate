@@ -39,7 +39,7 @@ $this->widget('pickadate.DatePickerWidget', array(
     'model' => $model,
     'attribute'=> 'modified_at'
 ));
-    ?>
+?>
 ````
 
 or you can:
@@ -73,7 +73,7 @@ $this->widget('pickadate.DatePickerWidget', array(
         }'
     )
 ));
-    ?>
+?>
 ````
 
 Tips & Tricks
