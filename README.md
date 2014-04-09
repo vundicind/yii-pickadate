@@ -46,11 +46,12 @@ or you can:
     $this->widget('pickadate.DatePickerWidget');
     ?>
 
-You can
-* configure the style of input HTML element (with [Bootstrap](http://getbootstrap.com/2.3.2/base-css.html#forms) for example)
-* change the display format of the selected date
-* and set an event handler
+Also you can
+* configure the style of input HTML element (with [Bootstrap](http://getbootstrap.com/2.3.2/base-css.html#forms) for example);
+* change the display format of the selected date;
+* and set an event handler.
 
+```php
     <?php
     $this->widget('pickadate.DatePickerWidget', array(
         'model' => $model,
@@ -69,6 +70,7 @@ You can
         )
     ));
     ?>
+````
 
 Tips & Tricks
 -------------
