@@ -34,20 +34,20 @@ Usage
 Minimal code to insert in a Yii view to get *Date picker* widget working:
 
 ```php
-    <?php
-    $this->widget('pickadate.DatePickerWidget', array(
-        'model' => $model,
-        'attribute'=> 'modified_at'
-    ));
+<?php
+$this->widget('pickadate.DatePickerWidget', array(
+    'model' => $model,
+    'attribute'=> 'modified_at'
+));
     ?>
 ````
 
 or you can:
 
 ````php
-    <?php
-    $this->widget('pickadate.DatePickerWidget');
-    ?>
+<?php
+$this->widget('pickadate.DatePickerWidget');
+?>
 ````
 
 Also you can
@@ -56,23 +56,23 @@ Also you can
 * and set an event handler.
 
 ```php
-    <?php
-    $this->widget('pickadate.DatePickerWidget', array(
-        'model' => $model,
-        'attribute'=> 'modified_at',
-        'htmlOptions' => array('class' => 'input-small'),
-        'options' => array(
-            'format' => 'yyyy-mm-dd',
-            'selectYears' => true,
-            'selectMonths' => true,
-        ),
-        'events' => array(
-            'onSet' => 'function(context) {
-                if(typeof context.select != "undefined")
-                    console.log("Date selected!");
-            }'
-        )
-    ));
+<?php
+$this->widget('pickadate.DatePickerWidget', array(
+    'model' => $model,
+    'attribute'=> 'modified_at',
+    'htmlOptions' => array('class' => 'input-small'),
+    'options' => array(
+        'format' => 'yyyy-mm-dd',
+        'selectYears' => true,
+        'selectMonths' => true,
+    ),
+    'events' => array(
+        'onSet' => 'function(context) {
+            if(typeof context.select != "undefined")
+                console.log("Date selected!");
+        }'
+    )
+));
     ?>
 ````
 
