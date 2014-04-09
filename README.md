@@ -50,8 +50,8 @@ $this->widget('pickadate.DatePickerWidget');
 ?>
 ````
 
-Also you can
-* configure the style of input HTML element (with [Bootstrap](http://getbootstrap.com/2.3.2/base-css.html#forms) for example);
+Also you can:
+* configure the style of input HTML element (with [Bootstrap](http://getbootstrap.com/2.3.2/base-css.html#forms) classes for example);
 * change the display format of the selected date;
 * and set an event handler.
 
