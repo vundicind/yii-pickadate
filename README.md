@@ -35,6 +35,4 @@ Tips & Tricks
 Credits
 -------
 
-This extension was inspired from: 
-
-[Yii Pickadate.js Widget](https://github.com/bromden/YiiPickadateWidget).
+Certain ideas have been inspired by [Yii Pickadate.js Widget](https://github.com/bromden/YiiPickadateWidget).
