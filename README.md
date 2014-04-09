@@ -33,18 +33,22 @@ Usage
 
 Minimal code to insert in a Yii view to get *Date picker* widget working:
 
+```php
     <?php
     $this->widget('pickadate.DatePickerWidget', array(
         'model' => $model,
         'attribute'=> 'modified_at'
     ));
     ?>
+````
 
 or you can:
 
+````php
     <?php
     $this->widget('pickadate.DatePickerWidget');
     ?>
+````
 
 Also you can
 * configure the style of input HTML element (with [Bootstrap](http://getbootstrap.com/2.3.2/base-css.html#forms) for example);
