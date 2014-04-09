@@ -12,7 +12,7 @@ Requirements
 License
 -------
 
-This extension is distributed under the [MIT License](https://github.com/vundicind/yii-pickadate/blob/master/LICENSE).
+This extension is free software, available under the terms of a [MIT(-style) open source license](https://github.com/vundicind/yii-pickadate/blob/master/LICENSE).
 
 Installation
 -------------
