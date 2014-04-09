@@ -12,7 +12,7 @@ Requirements
 License
 -------
 
-This extension is distributed under the [MIT License](http://opensource.org/licenses/MIT).
+This extension is distributed under the [MIT License](https://github.com/vundicind/yii-pickadate/blob/master/LICENSE).
 
 Installation
 -------------
@@ -28,6 +28,47 @@ php composer.phar require vundicind/yii-pickadate dev-master
 
 Usage
 -----
+
+### Date picker
+
+Minimal code to insert in a Yii view to get *Date picker* widget working:
+
+    <?php
+    $this->widget('pickadate.DatePickerWidget', array(
+        'model' => $model,
+        'attribute'=> 'modified_at'
+    ));
+    ?>
+
+or you can:
+
+    <?php
+    $this->widget('pickadate.DatePickerWidget');
+    ?>
+
+You can
+* configure the style of input HTML element (with [Bootstrap](http://getbootstrap.com/2.3.2/base-css.html#forms) for example)
+* change the display format of the selected date
+* and set an event handler
+
+    <?php
+    $this->widget('pickadate.DatePickerWidget', array(
+        'model' => $model,
+        'attribute'=> 'modified_at',
+        'htmlOptions' => array('class' => 'input-small'),
+        'options' => array(
+            'format' => 'yyyy-mm-dd',
+            'selectYears' => true,
+            'selectMonths' => true,
+        ),
+        'events' => array(
+            'onSet' => 'function(context) {
+                if(typeof context.select != "undefined")
+                    console.log("Date selected!");
+            }'
+        )
+    ));
+    ?>
 
 Tips & Tricks
 -------------
