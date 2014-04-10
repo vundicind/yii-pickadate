@@ -39,7 +39,7 @@ If you installed the extension via Composer then you have to add the following a
 ```php
     'aliases' => array(
         ...
-        'amcharts' => realpath(__DIR__ . '/../../vendor/vundicind/yii-pickadate/src'),
+        'pickadate' => realpath(__DIR__ . '/../../vendor/vundicind/yii-pickadate/src'),
         ...
     ),
 ```
@@ -49,7 +49,7 @@ Otherwise:
 ```php
     'aliases' => array(
         ...
-        'amcharts' => realpath(__DIR__ . '/../extensiosn/yii-pickadate/src'),
+        'pickadate' => realpath(__DIR__ . '/../extensiosn/yii-pickadate/src'),
         ...
     ),
 ```
