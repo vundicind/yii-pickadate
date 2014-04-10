@@ -98,7 +98,7 @@ $this->widget('pickadate.DatePickerWidget', array(
     'events' => array(
         'onSet' => 'function(context) {
             if(typeof context.select != "undefined")
-                console.log("Date selected!");
+                console.log("Hello: Date selected!");
         }'
     )
 ));
@@ -128,6 +128,44 @@ $this->widget('pickadate.TimePickerWidget');
 
 Tips & Tricks
 -------------
+
+### Events
+
+As was noted above one can handle Picker events using the `events` array, but they may be added also to the `options` array wrapped in a CJavaScriptExpression object:
+
+```php
+<?php
+$this->widget('pickadate.DatePickerWidget', array(
+    'model' => $model,
+    'attribute'=> 'modified_date',
+    'htmlOptions' => array('class' => 'input-small'),
+    'options' => array(
+        'format' => 'yyyy-mm-dd',
+        'selectYears' => true,
+        'selectMonths' => true,
+        'onSet' => new CJavaScriptExpression('function(context) {
+            if(typeof context.select != "undefined")
+                console.log("Hello: Date selected!");
+        }')
+    )
+));
+?>
+```
+
+### JavaScript dates
+
+One can pass JavaScript dates to *Time picker* in the following way:
+
+```php
+<?php
+$this->widget('pickadate.TimePickerWidget', array(
+    'options' => array(
+        'min' => new CJavaScriptExpression('new Date(2013, 3, 20, 10)'),
+        'min' => new CJavaScriptExpression('new Date(2013, 4, 2, 20)')
+    )
+));
+?>
+```
 
 Credits
 -------
