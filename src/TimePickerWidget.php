@@ -6,7 +6,7 @@
  * @author Radu Dumbrăveanu <vundicind@gmail.com>
  * @link https://github.com/vundicind/yii-pickadate/
  */
-class DatePickerWidget extends CInputWidget {
+class TimePickerWidget extends CInputWidget {
 
     protected $baseScript = 'picker';
 
@@ -78,7 +78,7 @@ class DatePickerWidget extends CInputWidget {
 
         $jsOptions = CJavaScript::encode($this->options);
 
-        $embeddedScript = "$('#{$id}').pickadate({$jsOptions});";
+        $embeddedScript = "$('#{$id}').pickatime({$jsOptions});";
 
         $this->registerScripts(__CLASS__ . '#' . $id, $embeddedScript);
     }
