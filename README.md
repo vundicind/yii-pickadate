@@ -31,6 +31,30 @@ php composer.phar require vundicind/yii-pickadate dev-master
 
 Extract the contents of the archive under `protected/extensions/`.
 
+Configuration
+-------------
+
+If you installed the extension via Composer then you have to add the following alias to the config file:
+
+```php
+    'aliases' => array(
+        ...
+        'amcharts' => realpath(__DIR__ . '/../../vendor/vundicind/yii-pickadate/src'),
+        ...
+    ),
+```
+
+Otherwise:
+
+```php
+    'aliases' => array(
+        ...
+        'amcharts' => realpath(__DIR__ . '/../extensiosn/yii-pickadate/src'),
+        ...
+    ),
+```
+
+
 Usage
 -----
 
