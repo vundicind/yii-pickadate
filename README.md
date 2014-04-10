@@ -66,7 +66,7 @@ Minimal code to insert in a Yii view to get *Date picker* widget working:
 <?php
 $this->widget('pickadate.DatePickerWidget', array(
     'model' => $model,
-    'attribute'=> 'modified_at'
+    'attribute'=> 'modified_date'
 ));
 ?>
 ````
@@ -88,7 +88,7 @@ Also you can:
 <?php
 $this->widget('pickadate.DatePickerWidget', array(
     'model' => $model,
-    'attribute'=> 'modified_at',
+    'attribute'=> 'modified_date',
     'htmlOptions' => array('class' => 'input-small'),
     'options' => array(
         'format' => 'yyyy-mm-dd',
@@ -104,6 +104,28 @@ $this->widget('pickadate.DatePickerWidget', array(
 ));
 ?>
 ````
+
+### Time picker
+
+Minimal code to insert in a Yii view to get *Time picker* widget working:
+
+```php
+<?php
+$this->widget('pickadate.TimePickerWidget', array(
+    'model' => $model,
+    'attribute'=> 'modified_time'
+));
+?>
+````
+
+or you can:
+
+````php
+<?php
+$this->widget('pickadate.TimePickerWidget');
+?>
+````
+
 
 Tips & Tricks
 -------------
