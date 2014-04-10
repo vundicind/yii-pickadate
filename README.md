@@ -116,16 +116,15 @@ $this->widget('pickadate.TimePickerWidget', array(
     'attribute'=> 'modified_time'
 ));
 ?>
-````
+```
 
 or you can:
 
-````php
+```php
 <?php
 $this->widget('pickadate.TimePickerWidget');
 ?>
-````
-
+```
 
 Tips & Tricks
 -------------
