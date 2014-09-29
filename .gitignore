@@ -6,3 +6,6 @@ assets/*
 
 # phpStorm project files
 .idea
+
+# NetBeans project files
+nbproject
