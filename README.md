@@ -49,7 +49,7 @@ Otherwise:
 ```php
     'aliases' => array(
         ...
-        'pickadate' => realpath(__DIR__ . '/../extensiosn/yii-pickadate/src'),
+        'pickadate' => realpath(__DIR__ . '/../extensions/yii-pickadate/src'),
         ...
     ),
 ```
